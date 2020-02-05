@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PunchOut" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A3E-gL-cZf">
+                                <rect key="frame" x="30" y="118" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="MdW-fb-Ugz"/>
+                                    <constraint firstAttribute="width" constant="200" id="dtm-Fm-YVc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Punched In:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ka7-9L-zfa">
+                                <rect key="frame" x="30" y="74" width="106" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours Worked:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuw-ia-e6V">
+                                <rect key="frame" x="30" y="182" width="133" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours Remaining:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QI8-Ub-X2Y">
+                                <rect key="frame" x="30" y="290" width="159" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3R-Zu-m0c">
+                                <rect key="frame" x="30" y="226" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="DJE-Dt-qre"/>
+                                    <constraint firstAttribute="height" constant="34" id="rJV-tm-tXW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qdi-z2-ryq">
+                                <rect key="frame" x="30" y="334" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="AHF-lX-uLp"/>
+                                    <constraint firstAttribute="height" constant="34" id="HSP-kh-nyj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clock Out:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxH-Fl-tRl">
+                                <rect key="frame" x="30" y="428" width="120" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inT-Yx-oxy">
+                                <rect key="frame" x="190" y="413" width="150" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:30 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D73-Ts-avA">
+                                        <rect key="frame" x="27" y="15" width="96.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueR-u4-8fU">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="60"/>
+                                        <connections>
+                                            <action selector="calculateEndOfDayTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RRQ-om-lzP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CRr-ug-58F"/>
+                                    <constraint firstAttribute="width" constant="150" id="LJg-pd-hiQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="ueR-u4-8fU" secondAttribute="bottom" id="Rcr-0m-vav"/>
+                                    <constraint firstItem="D73-Ts-avA" firstAttribute="centerY" secondItem="inT-Yx-oxy" secondAttribute="centerY" id="SyQ-xO-tU2"/>
+                                    <constraint firstItem="ueR-u4-8fU" firstAttribute="top" secondItem="inT-Yx-oxy" secondAttribute="top" id="Yaz-Q0-YTi"/>
+                                    <constraint firstAttribute="trailing" secondItem="ueR-u4-8fU" secondAttribute="trailing" id="Yeb-3a-Mni"/>
+                                    <constraint firstItem="ueR-u4-8fU" firstAttribute="leading" secondItem="inT-Yx-oxy" secondAttribute="leading" id="cVj-l7-F3r"/>
+                                    <constraint firstItem="D73-Ts-avA" firstAttribute="centerX" secondItem="inT-Yx-oxy" secondAttribute="centerX" id="nHj-vp-Q6S"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="f3R-Zu-m0c" firstAttribute="top" secondItem="Fuw-ia-e6V" secondAttribute="bottom" constant="20" id="6Sa-Al-oTx"/>
+                            <constraint firstItem="qdi-z2-ryq" firstAttribute="top" secondItem="QI8-Ub-X2Y" secondAttribute="bottom" constant="20" id="BMs-6u-fEM"/>
+                            <constraint firstItem="A3E-gL-cZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Ggz-Lg-9fb"/>
+                            <constraint firstItem="A3E-gL-cZf" firstAttribute="top" secondItem="ka7-9L-zfa" secondAttribute="bottom" constant="20" id="H5i-yc-OOt"/>
+                            <constraint firstItem="ka7-9L-zfa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="XuR-Wb-178"/>
+                            <constraint firstItem="hxH-Fl-tRl" firstAttribute="leading" secondItem="QI8-Ub-X2Y" secondAttribute="leading" id="awu-DI-Ckm"/>
+                            <constraint firstItem="inT-Yx-oxy" firstAttribute="leading" secondItem="hxH-Fl-tRl" secondAttribute="trailing" constant="40" id="bc4-dy-2il"/>
+                            <constraint firstItem="Fuw-ia-e6V" firstAttribute="top" secondItem="A3E-gL-cZf" secondAttribute="bottom" constant="30" id="eR4-rS-z62"/>
+                            <constraint firstItem="Fuw-ia-e6V" firstAttribute="leading" secondItem="ka7-9L-zfa" secondAttribute="leading" id="f3h-1H-f1D"/>
+                            <constraint firstItem="ka7-9L-zfa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="hbR-rr-13C"/>
+                            <constraint firstItem="QI8-Ub-X2Y" firstAttribute="top" secondItem="f3R-Zu-m0c" secondAttribute="bottom" constant="30" id="iQV-cs-hKO"/>
+                            <constraint firstItem="QI8-Ub-X2Y" firstAttribute="leading" secondItem="Fuw-ia-e6V" secondAttribute="leading" id="k8n-yu-918"/>
+                            <constraint firstItem="hxH-Fl-tRl" firstAttribute="top" secondItem="qdi-z2-ryq" secondAttribute="bottom" constant="60" id="lRr-sg-yJc"/>
+                            <constraint firstItem="f3R-Zu-m0c" firstAttribute="leading" secondItem="A3E-gL-cZf" secondAttribute="leading" id="nQG-I3-wtd"/>
+                            <constraint firstItem="qdi-z2-ryq" firstAttribute="leading" secondItem="f3R-Zu-m0c" secondAttribute="leading" id="t4D-Wh-azp"/>
+                            <constraint firstItem="inT-Yx-oxy" firstAttribute="centerY" secondItem="hxH-Fl-tRl" secondAttribute="centerY" id="xAh-tg-jOn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="endOfDayLabel" destination="D73-Ts-avA" id="P4E-wW-fnN"/>
+                        <outlet property="endOfDayView" destination="inT-Yx-oxy" id="nDD-dz-nWF"/>
+                        <outlet property="hoursWorkedTextField" destination="f3R-Zu-m0c" id="7hJ-yp-UUl"/>
+                        <outlet property="punchTextField" destination="A3E-gL-cZf" id="vPd-CU-Ewc"/>
+                        <outlet property="timeRemainingTextField" destination="qdi-z2-ryq" id="3YP-kE-jhN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>
